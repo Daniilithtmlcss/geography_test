@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+.play {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+.play h3{
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+.coneth {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;;
+}
+.coneth p {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;;
+}
+.vopros {
+    text-align: left;
+    border: 1px dotted #0fa;
+}
+.colorvopros input {  
+    display: none;  
+}  
+.colorvopros label {  
+    display: inline-block;  
+    vertical-align: middle;  
+}  
+.colorvopros label::before {  
+    content: "";  
+    display: inline-block;  
+    width: 12px;  
+    height: 12px;  
+    border: 2px solid white;  
+    vertical-align: middle;  
+    border-radius: 50%;  
+    margin-right: 12px;  
+}  
+.colorvopros input:checked ~ label::before {  
+    background-color: #0fa;  
+    border: 2px solid white;  
+    box-shadow: 0 0 5px #0fa, 0 0 25px #0fa, 0 0 50px #0fa, 0 0 200px #0fa;  
+}  
+
+.colorvopros  {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+.otvet {
+    border: 1px solid #0fa;
+    position: relative;
+    display: block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #0fa;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.otvet:hover {
+    background: #0fa;
+    color: #050801;
+    box-shadow: 0 0 5px #0fa, 0 0 25px #0fa, 0 0 50px #0fa,
+        0 0 200px #0fa;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.otvet:nth-child(1) {
+    filter: hue-rotate(270deg);
+}
+
+.otvet:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+
+.otvet span {
+    position: absolute;
+    display: block;
+}
+
+.otvet span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0fa);
+    animation: animate1 1s linear infinite;
+}
+
+.otvet span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #0fa);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+.otvet span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #0fa);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.otvet span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #0fa);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
+.start h1 {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.start h1::selection {
+    background-color: blue;
+}
+
+.start h2 {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.start h2::selection {
+    background-color: blue;
+}
+
+.btnstart {
+    border: 1px solid #0fa;
+    position: relative;
+    display: block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #0fa;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.btnstart:hover {
+    background: #0fa;
+    color: #050801;
+    box-shadow: 0 0 5px #0fa, 0 0 25px #0fa, 0 0 50px #0fa,
+        0 0 200px #0fa;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.btnstart:nth-child(1) {
+    filter: hue-rotate(270deg);
+}
+
+.btnstart:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+
+.btnstart span {
+    position: absolute;
+    display: block;
+}
+
+.btnstart span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0fa);
+    animation: animate1 1s linear infinite;
+}
+
+.btnstart span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #0fa);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+.btnstart span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #0fa);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.btnstart span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #0fa);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
