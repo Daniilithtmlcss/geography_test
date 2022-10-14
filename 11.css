@@ -179,7 +179,11 @@ body {
 .start h2::selection {
     background-color: blue;
 }
-
+.a2 {
+    text-align: center;
+    color: #0fa;
+    font-size: 30px;
+}
 .btnstart {
     border: 1px solid #0fa;
     position: relative;
